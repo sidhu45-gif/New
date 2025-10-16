@@ -1,0 +1,78 @@
+// Name typing animation
+document.addEventListener("DOMContentLoaded", function() {
+const nameText = "Sidhu Pottabathini";
+const typingEl = document.getElementById("typing-name");
+let idx = 0;
+function typing() {
+if (idx < nameText.length) {
+typingEl.innerHTML += nameText.charAt(idx);
+idx++;
+setTimeout(typing, 120);
+}
+}
+typing();
+});
+// Particle background
+particlesJS("particles-js", {
+particles: {
+number: { value: 80 },
+color: { value: "#00bfff" },
+shape: { type: "circle" },
+opacity: { value: 0.6 },
+size: { value: 3, random: true },
+line_linked: {
+enable: true,
+distance: 135,
+color: "#00bfff",
+opacity: 0.8,
+width: 1.5
+},
+move: { enable: true, speed: 2, random: true },
+},
+interactivity: {
+detect_on: "canvas",
+events: { onhover: { enable: true, mode: "grab" } },
+modes: { grab: { distance: 170, line_linked: { opacity: 1 } } },
+},
+retina_detect: true
+});
+// Hamburger menu logic
+const menuBtn = document.getElementById("menu-toggle");
+const menuNav = document.getElementById("side-menu");
+const menuBg = document.getElementById("menu-bg");
+function closeMenu() {
+menuNav.classList.add("hidden");
+document.body.classList.remove("menu-active");
+}
+
+function openMenu() {
+menuNav.classList.remove("hidden");
+document.body.classList.add("menu-active");
+}
+// Open menu
+menuBtn.addEventListener("click", openMenu);
+// Overlay closes menu
+menuBg.addEventListener("click", closeMenu);
+// Keyboard ESC closes menu
+document.addEventListener("keydown", function(e) {
+if (!menuNav.classList.contains("hidden") && (e.key === "Escape" || e.key === "Esc")) {
+closeMenu();
+}
+});
+// Smooth scroll navigation
+window.navigateTo = function(id) {
+closeMenu();
+setTimeout(function() {
+document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}, 220);
+}
+// Flip cards: works on click/tap
+document.addEventListener("DOMContentLoaded", function() {
+document.querySelectorAll(".cert-card").forEach(function(card) {
+card.addEventListener("click", function() {
+card.classList.toggle("flip");
+});
+});
+});
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sidhu Pottabathini | Portfolio</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+<div id="particles-js"></div>
+<div id="menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="menu-bg"></div>
+<nav id="side-menu" class="hidden">
+<span class="close-menu" onclick="closeMenu()">&times;</span>
+<ul>
+<li onclick="navigateTo('home')">Home</li>
+<li onclick="navigateTo('summary')">Summary</li>
+<li onclick="navigateTo('education')">Education</li>
+<li onclick="navigateTo('experience')">Experience</li>
+<li onclick="navigateTo('skills')">Skills</li>
+<li onclick="navigateTo('certification-section')">Certifications</li>
+<li onclick="navigateTo('contact')">Contact</li>
+</ul>
+</nav>
+<section id="home">
+<div class="hello-title"><span class="gradient-text">Hlo Iam</span></div>
+<h1 id="typing-name"></h1>
+<div class="subtitle">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135798.png" width="22"
+style="vertical-align: middle; margin-right:7px;"/>
+<span>Fresher</span>
+</div>
+<p id="location">
+<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="location"
+width="18"/>
+Warangal, Telangana
+</p>
+</section>
+<section id="summary" class="resume-section">
+<h2 class="big-title">Summary</h2>
+
+<p>Resourceful and adaptable data analyst and web developer, experienced in Python,
+Java, C, HTML, JS, and SQL. Skilled in business intelligence, cloud (Amazon, Datacom),
+data visualization (PowerBI, Tata, Deloitte), and UX. Fast learner, effective communicator,
+team player, and driven by digital innovation and security.</p>
+</section>
+<section id="education" class="resume-section">
+<h2 class="big-title">Education</h2>
+<ul>
+<li><strong>BCA</strong> - Masterji Degree PG College (GPA 7.5)</li>
+<li><strong>Intermediate MPC</strong> - Sr. NVB Junior College (GPA 69.5)</li>
+<li><strong>High School</strong> - St. Francis Akshara High School (GPA 10.0)</li>
+</ul>
+</section>
+<section id="experience" class="resume-section">
+<h2 class="big-title">Experience</h2>
+<ul>
+<li>Web Developer Intern (Kobdub): Responsive UIs, REST APIs, agile workflow.</li>
+<li>Frontend Developer (IBM SkillsBuild): Web apps with HTML, CSS, JS.</li>
+<li>Accenture Apprentice: API integration, teamwork, security.</li>
+</ul>
+</section>
+<section id="skills" class="resume-section">
+<h2 class="big-title">Skills</h2>
+<ul>
+<li>Python, Java, C, C++, HTML, CSS, JS, SQL</li>
+<li>PowerBI, Excel, cloud, UX/UI, Agile, leadership</li>
+</ul>
+</section>
+<section id="certification-section">
+<h2 class="big-title">My Certifications</h2>
+<div class="line"></div>
+<div class="certs-zigzag">
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Deloitte Data Analyst</div>
+<div class="card-back">Business intelligence, enterprise dashboards.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">Datacom Cloud Intro</div>
+<div class="card-back">Cloud architecture, AWS, deployments.</div>
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Lloyds UX Design Advanced</div>
+<div class="card-back">UI prototyping, design systems.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">Tata GenAI Data Analytics</div>
+<div class="card-back">AI/ML tools, business analytics.</div>
+
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Tata Cybersecurity Analyst</div>
+<div class="card-back">Security protocols, cloud management.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">Tata Data Visualization</div>
+<div class="card-back">Business dashboards, PowerBI.</div>
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Amazon Solutions Architecture</div>
+<div class="card-back">AWS, EC2, S3, cloud storage.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">Accenture Apprentice</div>
+<div class="card-back">API teamwork, full stack basics.</div>
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Accenture Dev & Technology</div>
+<div class="card-back">Web engineering, agile.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">Accenture Software Engineering</div>
+<div class="card-back">Software design, agile projects.</div>
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">PowerBI Office Master</div>
+<div class="card-back">Dashboards, Excel, Microsoft Office.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">IBM Web Dev Fundamentals</div>
+<div class="card-back">HTML, CSS, JS, IBM web apps.</div>
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Softskills Training</div>
+<div class="card-back">Communication, teamwork, leadership.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">TCS ION AI For All</div>
+<div class="card-back">AI, ML, workflow automation.</div>
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Intel Data Analytics</div>
+<div class="card-back">Python, analytics, visualization.</div>
+</div></div>
+<div class="cert-card align-right"><div class="card-inner">
+<div class="card-front">Simpllearn Web Development</div>
+<div class="card-back">Full front-end and backend training.</div>
+
+</div></div>
+<div class="cert-card align-left"><div class="card-inner">
+<div class="card-front">Kobdub Internship</div>
+<div class="card-back">Live web deployment, projects.</div>
+</div></div>
+</div>
+</section>
+<section id="contact">
+<h2 class="big-title">Contact Me</h2>
+<form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+<input type="text" name="name" placeholder="Your Name" required />
+<input type="email" name="email" placeholder="Your Email" required />
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send</button>
+</form>
+<div class="contact-links">
+<a href="tel:+918186865891" target="_blank" class="contact-icon translucent">
+<img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" width="40"/>
+<span>Call</span>
+</a>
+<a href="mailto:pottabathinisidhu45@gmail.com" target="_blank" class="contact-icon
+translucent">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="40"/>
+<span>Email</span>
+</a>
+<a href="https://www.linkedin.com/in/sidhu-pottabathini-b1a746338" target="_blank"
+class="contact-icon translucent">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40"/>
+<span>LinkedIn</span>
+</a>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
+
+
